@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+    background-color: #eceff4;
+}
+
+.quote{
+    flex: 1;
+}
+
+.form-wrapper{
+    flex: 1;
+    background-color: white;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.3),
+    0 5px 10px rgba(0, 0, 0, 0.3);;
+}
+
+.button{
+    flex: 1;
+}
+
+.left-side{
+    width: 400px;
+}
+
+.gibbon{
+    background-image: url("/src/gibbon.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40vw;
+    height: 100vh;
+    background-position: right 50% left 50%;
+}
+
