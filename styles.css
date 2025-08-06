@@ -1,6 +1,13 @@
 *{
     padding: 0;
     margin: 0;
+    background-color: #102613;
+    font-family: destiny,'Courier New', Courier, monospace;
+}
+
+@font-face {
+    font-family: destiny;
+    src: url("/fonts/DESTINY.ttf");
 }
 
 .wrapper{
@@ -8,37 +15,94 @@
     flex-direction: row;
 }
 
+.name,.mail-num,.pass-conf{
+    display: flex;
+    justify-content: left;
+    gap: 2rem;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+
+
 .right-side{
     display: flex;
     flex-direction: column;
-    background-color: #eceff4;
+    justify-content: center;
+    height: 100vh;
 }
 
 .quote{
+    display: flex;
     flex: 1;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    font-size: 2rem;
 }
 
 .form-wrapper{
     flex: 1;
-    background-color: white;
     box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.3),
     0 5px 10px rgba(0, 0, 0, 0.3);;
+    padding: 20px;
+    color: white;
+    font-size: 2rem;
 }
 
 .button{
     flex: 1;
+    color: white;
+    font-size: 2rem;
 }
 
 .left-side{
-    width: 400px;
+    width: 35vw;
 }
 
 .gibbon{
-    background-image: url("/src/gibbon.jpg");
+    background-image: url("src/gibbon.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 40vw;
+    width: 35vw;
     height: 100vh;
-    background-position: right 50% left 50%;
+    background-position: center;
+}
+
+fieldset{
+    border: 0;
+}
+
+label+input{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    border: 3px solid white;
+    width: 15rem;
+    height: 3rem;
+}
+
+input, select{
+    background: transparent;
+}
+
+input:focus{
+    appearance: none;
+}
+
+button{
+    color: white;
+    font-size: 2rem;
+    padding: 5px;
+    border: solid greenyellow 5px;
+}
+
+button:hover{
+    cursor: pointer;
 }
 
