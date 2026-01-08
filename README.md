@@ -1,1 +1,1 @@
-live page at : [Plasticomega.github.io/sign-up-form](url)
+live page at : [github-pages](Plasticomega.github.io/sign-up-form)
