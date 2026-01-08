@@ -1,8 +1,12 @@
-*{
+* {
     padding: 0;
     margin: 0;
-    background-color: #102613;
-    font-family: destiny,'Courier New', Courier, monospace;
+    font-family: destiny, 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+body{
+        background-color: #102613;
 }
 
 @font-face {
@@ -10,12 +14,14 @@
     src: url("/fonts/DESTINY.ttf");
 }
 
-.wrapper{
+.wrapper {
     display: flex;
     flex-direction: row;
 }
 
-.name,.mail-num,.pass-conf{
+.name,
+.mail-num,
+.pass-conf {
     display: flex;
     justify-content: left;
     gap: 2rem;
@@ -25,14 +31,14 @@
 
 
 
-.right-side{
+.right-side {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100vh;
 }
 
-.quote{
+.quote {
     display: flex;
     flex: 1;
     text-align: center;
@@ -44,65 +50,101 @@
     font-size: 2rem;
 }
 
-.form-wrapper{
+.form-wrapper {
     flex: 1;
     box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.3),
-    0 5px 10px rgba(0, 0, 0, 0.3);;
+        0 5px 10px rgba(0, 0, 0, 0.3);
+    ;
     padding: 20px;
     color: white;
     font-size: 2rem;
 }
 
-.button{
+.button {
     flex: 1;
     color: white;
     font-size: 2rem;
 }
 
-.left-side{
+.left-side {
     width: 35vw;
+    position: relative;
 }
 
-.gibbon{
+.gibbon {
     background-image: url("src/gibbon.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 35vw;
     height: 100vh;
     background-position: center;
+    z-index: 5;
 }
 
-fieldset{
+.logo {
+    display: flex;
+    position: absolute;
+    top: clamp(2rem, 8vh, 6rem);
+    z-index: 10;
+    width: 35vw;
+    height: 15%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(6px);
+    padding: 1.5rem;
+}
+
+.gibbon-logo {
+    flex: 0 0 auto;
+
+    width: min(40%, 150px);
+    aspect-ratio: 1 / 1;
+
+    background-image: url("src/gibbonlogo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.logo div {
+    align-self: center;
+    font-size: clamp(1rem, 1.8vw, 1.4rem);
+}
+
+fieldset {
     border: 0;
 }
 
-label+input{
+label+input {
     display: flex;
     flex-direction: column;
 }
 
-input{
+input {
     border: 3px solid white;
     width: 15rem;
     height: 3rem;
 }
 
-input, select{
+input,
+select {
     background: transparent;
 }
 
-input:focus{
+input:focus {
     appearance: none;
 }
 
-button{
+button {
     color: white;
     font-size: 2rem;
     padding: 5px;
     border: solid greenyellow 5px;
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
 }
-
